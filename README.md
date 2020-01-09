@@ -1,5 +1,5 @@
 # vue-typescript
-
+## Vue + Vuex + TypeScript入门demo
 ## Project setup
 ```
 npm install
