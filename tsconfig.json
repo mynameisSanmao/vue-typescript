@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    // 启用 vuex-class 需要开启此选项
+    "strictFunctionTypes": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    // 定义一个变量就必须给它一个初始值
+    "strictPropertyInitialization" : false,
+    // 允许编译javascript文件
+    "allowJs": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env"
+    ],
+    // 指定特殊模块的路径
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    // 编译过程中需要引入的库文件的列表
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  // ts 管理的文件
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  // ts 排除的文件
+  "exclude": [
+    "node_modules"
+  ]
+}
