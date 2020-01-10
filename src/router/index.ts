@@ -25,6 +25,16 @@ const routes = [
     // ],
   },
   {
+    path: '/center/setting',
+    name: 'MDate',
+    component: () => import('../components/userCenter/MDate.vue'),
+  },
+  {
+    path: '/center/mags',
+    name: 'UserCenterMags',
+    component: () => import('../components/userCenter/Mags.vue'),
+  },
+  {
     path: '/shoppingCart',
     name: 'Cart',
     component: () => import('../views/shoppingCart.vue'),

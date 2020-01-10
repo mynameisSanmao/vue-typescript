@@ -35,6 +35,7 @@ export default class UserCenterIndex extends Vue {
   // methods
   private showNews() {
     console.log('news');
+    this.$router.push('/center/mags');
   }
   private showSetting() {
     console.log('setting');

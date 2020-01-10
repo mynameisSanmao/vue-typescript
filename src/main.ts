@@ -1,5 +1,5 @@
 import Vue from "vue";
-// import { Button, Select } from "element-ui";
+import { Button, Select } from "element-ui";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -8,8 +8,8 @@ import './assets/styles.less';
 import { Component } from 'vue-property-decorator';
 import storage from './global/storage';
 
-// Vue.use(Button);
-// Vue.use(Select);
+Vue.use(Button);
+Vue.use(Select);
 
 Vue.prototype.$storage = storage;
 Vue.config.productionTip = false;
