@@ -1,5 +1,6 @@
 # vue-typescript
-
+## Vue + Vuex + TypeScript入门demo
+#### 参考链接 https://cloud.tencent.com/developer/article/1441658
 ## Project setup
 ```
 npm install
