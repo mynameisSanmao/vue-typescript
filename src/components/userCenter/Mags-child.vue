@@ -24,14 +24,12 @@ export default class UserCenterChildMags extends Vue {
   private msg:string = this.m || 'hello';
 
   // emit 第一种方式
-  @Emit('bindSendOne')
-  childClickone(){
+  @Emit('bindSendOne') childClickone(){
     return 'msgOne';
   }
 
   // emit 第二种方式
-  @Emit()
-  private bindSendTwo() {
+  @Emit() private bindSendTwo() {
       return 'this.msg';
   }
   private childClicktwo() {
